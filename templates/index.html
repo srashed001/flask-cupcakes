@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center text-white display-1 bg-primary">Sami's Bakery</h1>
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Cupcakes List</h1>
+                <ul class="list-group cupcakes shadow m-4"></ul>
+            </div>
+            <div class="col m-4 rounded shadow">
+                <h3 class="text-center my-3">Add Cupcake</h3>
+                <form action="/">
+                    <div class="mb-3">
+                        <label for="flavor" class="form-label">Flavor</label>
+                        <input type="text" class="form-control" id="flavor">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="size" class="form-label">Size</label>
+                                <input type="text" class="form-control" id="size">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="rating" class="form-label">Rating</label>
+                                <input type="text" class="form-control" id="rating">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Image URL</label>
+                        <input type="text" class="form-control" id="image">
+                    </div>
+                    <button class="btn btn-primary mb-3">Add Cupcake</button>
+                </form>
+            </div>
+        </div>
+       
+    </div>
+  
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+    integrity="sha256-T/f7Sju1ZfNNfBh7skWn0idlCBcI3RwdLSS4/I7NQKQ=" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="static/cupcakes.js"></script>
+</body>
+</html>
